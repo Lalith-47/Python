@@ -6,4 +6,3 @@ def fibo(a):
 a=int(input("Enter the value: "))
 for i in range(0,a+1):
     print(fibo(i))   
-print('Hello')
