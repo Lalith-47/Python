@@ -1,9 +1,10 @@
-def fibo(a):
-    if a==0 or a==1:
+def fibo(i):
+    if i <= 1:
+        return i
+    else:
+        a=0
+        a = (fibo(i-1)+fibo(i-2))
         return a
-    return fibo(a-1)+fibo(a-2)
-
-a=int(input("Enter the value: "))
-for i in range(0,a+1):
-    print(fibo(i))  
-
+n=int(input('Enter value: '))
+for i in range(0,n+1):
+    print(fibo(i),end=' ')
