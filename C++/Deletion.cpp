@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int a[10], i, n, j, k, value;
+    system("cls");
     cout << "Enter number of elements to be entered: ";
     cin >> n;
     for (i = 0; i < n; i++)
