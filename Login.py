@@ -1,5 +1,7 @@
+import random
 username='Alice'
 password='abc123'
+OTP=random.randint(111111,999999)
 i=0
 while i<=5:
     i+=1 
@@ -16,8 +18,13 @@ while i<=5:
     if b!=password:
         print('Invalid Password ')
         continue 
-    
-    if a==username and b==password:
+    print('OTP: ',OTP)
+    otp=int(input('Enter the OTP: '))
+    if otp!=OTP:
+        print('Incorrect OTP')
+        continue
+
+    if a==username and b==password and otp==OTP:
         print('Access approved ')
         break
     
