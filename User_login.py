@@ -55,6 +55,7 @@ def main():
         decision=input('Do you want to login or signup? (login/signup): ').lower()
         if decision=='login':
             login()
+            break
         if decision=='signup':
             signup()  
         else:
