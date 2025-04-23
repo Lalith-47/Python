@@ -17,7 +17,7 @@ def sort():
     a.sort()
     print(a)
 def max_min():
-    print('\nMax:',a[0],'Min:',a[-1])
+    print('\nMin:',a[0],'Max:',a[-1])
 def main():
     add()
     remove()
