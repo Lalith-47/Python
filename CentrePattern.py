@@ -5,6 +5,5 @@ def PatternCentre(rows):
         for j in range((i*2)-1):
             print("*",end="")
         print()
-
 rows=int(input('Enter Rows: '))
 PatternCentre(rows)
