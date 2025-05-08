@@ -3,7 +3,6 @@ def binary(list,low,high,key):
         print('Element not found ')
     else:
         mid=(low+high)//2
-        print(mid)
         if list[mid]==key:
             print('Element found at index',mid)
         elif list[mid]>key:
