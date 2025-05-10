@@ -4,7 +4,7 @@ low=0
 high=n-1
 a=[]
 pas=0
-for i in range(0,n):
+for i in range(n):
     a.append(int(input('Element '+str(i+1)+': ')))
 a.sort()
 print(a)
@@ -18,7 +18,6 @@ while low<=high:
         low = mid + 1
     elif a[mid] > ele:
         high = mid - 1
-    
     
 if pas==0:
     print('Element not found')
