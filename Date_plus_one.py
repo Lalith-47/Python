@@ -1,5 +1,5 @@
 import sys
-
+#Defining the DAte increment function
 def incrementOfDate():
     dates_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     date = int(input('Enter date in DD format: '))
@@ -20,7 +20,6 @@ def incrementOfDate():
     if date > dates_in_month[month - 1]:
         print('Invalid data entered')
         sys.exit()
-
     # Increment date
     date += 1
     if date > dates_in_month[month - 1]:
