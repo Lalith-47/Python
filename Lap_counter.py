@@ -1,17 +1,17 @@
-from datetime import datetime, timedelta
+from datetime import datetime , timedelta
+from pprint import pprint
 laps={}
-Initial_start=datetime.now()
+start = datetime.now()
+print(f"Click Enter to record lap and type 'exit' to stop Lap count")
 i=1
-print(f"Press enter to record lap and to stop enter 'exit' ")
 while True:
-    x=0
-    if "exit" != input().lower():
-        x = f'{(datetime.now() - Initial_start).total_seconds():.2f}'
-        laps[f"Lap {i}"] = x
-        print(f"Lap {i}: {x}")
-        i += 1
+    if 'exit'!= input().lower():
+        lap=(datetime.now()-start).total_seconds()
+        print(f"Lap {i}: {lap:.2f}")
+        laps[f"Lap {i}"]=f"{lap:.2f}"
+        i+=1
     else:
         break
-Final_stop=datetime.now()
-laps["Total lap"]=f'{(Final_stop-Initial_start).total_seconds():.2f}'
-print(laps)
+stop=datetime.now()
+laps[f"Total time"]=f"{(stop-start).total_seconds():.2f}"
+pprint(laps)
