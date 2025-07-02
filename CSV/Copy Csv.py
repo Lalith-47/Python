@@ -11,4 +11,4 @@ try:
             for row in data:
                 new.writerow(row)
 except Exception as e:
-    print(f"Error Line: {sys.exc_info()[2]}\nError Message: {e}")
+    print(f"Error Line: {sys.exc_info()[2].tb_lineno}\nError Message: {e}")
